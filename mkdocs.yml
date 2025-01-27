@@ -1,0 +1,70 @@
+site_name: Docs for Racing League Tools 
+site_url: https://rltwikitest.github.io
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+  palette: 
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to light mode
+
+    # Palette toggle for dark mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  
+extra:
+  alternate:
+    - name: Polish
+      link: /pl/
+      lang: pl
+    - name: German
+      link: /de/
+      lang: de
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/W2bQb44xGa
+#markdown_extensions:
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: installation.md
+    - First steps: first-steps.md
+
+
+plugins:
+  - search
+  #- git-revision-date-localized:
+  #    enable_creation_date: true
+  #    type: date
