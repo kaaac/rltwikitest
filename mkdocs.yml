@@ -61,7 +61,8 @@ nav:
   - Getting Started:
     - Installation: installation.md
     - First steps: first-steps.md
-
+  - Theme development:
+    - Imported: input/FlexRenderer_Manual_Documentation.md
 
 plugins:
   - search
