@@ -1,0 +1,4064 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://rltwikitest.github.io/input/FlexRenderer_Manual_Documentation/">
+      
+      
+        <link rel="prev" href="../../first-steps/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Imported - Docs for Racing League Tools</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#racing-league-tools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Docs for Racing League Tools" class="md-header__button md-logo" aria-label="Docs for Racing League Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs for Racing League Tools
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Imported
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/pl/" hreflang="pl" class="md-select__link">
+              Polish
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/de/" hreflang="de" class="md-select__link">
+              German
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Theme development
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Docs for Racing League Tools" class="md-nav__button md-logo" aria-label="Docs for Racing League Tools" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Docs for Racing League Tools
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First steps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Theme development
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Theme development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Imported
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Imported
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#racing-league-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Racing League Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flex-renderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      FLEX RENDERER
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      MANUAL / DOCUMENTATION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic principles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folders-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folders structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folders structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theme_descriptionjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      theme_description.json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#themelink" class="md-nav__link">
+    <span class="md-ellipsis">
+      ThemeLink
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theme-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theme resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layouts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layouts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layout_descriptionjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      layout_description.json
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="layout_description.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#render-captions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render captions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#render-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render data types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendertype-driversessionstatistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      RenderType: DriverSessionStatistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendertype-driverseasonstatistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      RenderType: DriverSeasonStatistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asset-inheritance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset inheritance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logotypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logotypes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logotypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logotype-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logotype variants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teamdarklogotypepath" class="md-nav__link">
+    <span class="md-ellipsis">
+      {Team.DarkLogotypePath}
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liveries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Liveries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#block-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-properties-for-any-type-of-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common properties for any type of block
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-types-and-block-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block Types and Block Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block Types and Block Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocktype-image-blockoptions-imageoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      BlockType: image BlockOptions: ImageOptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colorizeratingoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ColorizeRatingOptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradientstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      GradientStop
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GradientStop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stack-and-dock" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack and Dock
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stack and Dock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocktypes-stack-and-dock-blockoptions-paneloptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      BlockTypes: stack and dock BlockOptions: PanelOptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      ItemStack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocktype-grid-blockoptions-gridoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      BlockType: grid BlockOptions: GridOptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gridrowdefinition" class="md-nav__link">
+    <span class="md-ellipsis">
+      GridRowDefinition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GridRowDefinition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gridcoldefinition" class="md-nav__link">
+    <span class="md-ellipsis">
+      GridColDefinition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GridColDefinition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canvas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Canvas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocktype-canvas-blockoptions-canvasoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      BlockType: canvas BlockOptions: CanvasOptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocktype-table-blockoptions-tableoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      BlockType: table BlockOptions: TableOptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tablecolumndefinition" class="md-nav__link">
+    <span class="md-ellipsis">
+      TableColumnDefinition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TableColumnDefinition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorizeoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ColorizeOptions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockoptions-colorizeoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      BlockOptions: ColorizeOptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-components-folder-at-the-theme-layout-or-layer-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. "components" folder (at the theme, layout or layer level).
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-directly-in-layers-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Directly in layer's code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Directly in layer's code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#omponent-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сomponent usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-the-required-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the required component
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding the required component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Styles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Styles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-styles-folder-at-the-theme-layout-or-layer-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. "styles" folder (at the theme, layout or layer level).
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-directly-in-layers-code_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Directly in layer's code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Directly in layer's code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#style-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Style properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#styles-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Styles hierarchy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Styles hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#style-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Style usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-the-required-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the required style
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triggers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triggeritem" class="md-nav__link">
+    <span class="md-ellipsis">
+      TriggerItem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triggerpropertyitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      TriggerPropertyItem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      External triggers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      not required
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public_propertiesjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      public_properties.json
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publicproperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      PublicProperty
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publicpropertiescategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      PublicPropertiesCategory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publicpropertiespreset" class="md-nav__link">
+    <span class="md-ellipsis">
+      PublicPropertiesPreset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PublicPropertiesPreset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enum-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enum properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data source
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data objects
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sessiondriverdaydrivername" class="md-nav__link">
+    <span class="md-ellipsis">
+      "{Session.DriverDayDriver.Name}"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=""{Session.DriverDayDriver.Name}"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#return-value-of-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Return value of expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Return value of expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ombining-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сombining expressions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escaping-special-symbols" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escaping special symbols
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-converters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Converters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Converters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onverters-with-one-parameter-or-without-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сonverters (with one parameter or without parameters):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onverters-with-multiple-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сonverters (with multiple parameters)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#localization-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localization support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Localization support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      .json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h2 id="racing-league-tools"><strong>Racing League Tools</strong></h2>
+<h2 id="flex-renderer"><strong>FLEX RENDERER</strong></h2>
+<h2 id="manual-documentation"><strong>MANUAL / DOCUMENTATION</strong></h2>
+<p>v0.9.5</p>
+<h1 id="introduction"><strong>Introduction</strong></h1>
+<p>Racing League Tools (RLT) app's version 0.7.0 introduces a new 2d graphics rendering engine. It uses a special language for describing markup, fundamentally similar to the various XML languages, especially close to XAML. However, currently only the <strong>json</strong> format is supported.</p>
+<p><strong>Theme</strong> - is a complete set of files (markup, images, fonts, etc), describing how to generate images based on data from the app. The app comes with a default theme, but custom themes are also supported. The renderer can only work with one theme at a time.</p>
+<p>Fundamentally, a theme is a folder that includes at least a file-describing the theme in general, folder(s) with layouts that include 1 or more layers.</p>
+<p>It is recommended to use Visual Studio Code to edit json files. It's lightweight, powerful and user-friendly text editor. The extension for VS Code "RLT Theme Helper" (https://marketplace.visualstudio.com/items?itemName=Kaaac.rlt-theme-helper) by Kaac makes it much easier to create and edit themes.</p>
+<p>RLT supports comments in json files (" // commentary "). This is forbidden by the standard json format specification. However, this was done for convenience.</p>
+<p>To create a new theme use main menu -&gt; "Themes" -&gt; "Create a new theme":</p>
+<p><img alt="" src="../_page_1_Picture_7.jpeg" /></p>
+<p>To manage of the installed themes, use main menu -&gt; "Manage themes…":</p>
+<table>
+<thead>
+<tr>
+<th>Themes</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Theme setups:</td>
+<td>default</td>
+<td>V の</td>
+<td>@ Manage setups ...</td>
+<td></td>
+<td></td>
+<td>Browse more themes on our Discord</td>
+<td></td>
+<td>Download / update theme ...</td>
+<td></td>
+<td>C Refresh list</td>
+<td>O Open themes folder ...</td>
+</tr>
+<tr>
+<td>Active</td>
+<td>Preview (main)</td>
+<td></td>
+<td>Preview Name</td>
+<td></td>
+<td>Author</td>
+<td>Description</td>
+<td>Version</td>
+<td>Layouts</td>
+<td>Links</td>
+<td>Options</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>CATEGORY 1 - F1 TM Discr 1 6 Charles Lection Courge Runnel</td>
+<td>1.26 . 160</td>
+<td></td>
+<td>Default</td>
+<td>Sirotkin</td>
+<td>Racing League Tools default theme</td>
+<td>1.1</td>
+<td>18</td>
+<td></td>
+<td>భ్రీకి</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>CATEGORY 1 - F1 TM Charles Lector 1 61 @ George Runnel</td>
+<td>1,24,764</td>
+<td></td>
+<td>Test theme</td>
+<td>Sirotkin</td>
+<td>Just test theme for debuging 0.9.5</td>
+<td>0.1</td>
+<td>19</td>
+<td></td>
+<td>భ్రీక</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="basic-principles"><strong>Basic principles</strong></h2>
+<p><img alt="" src="../_page_2_Figure_2.jpeg" /></p>
+<p>A theme is a collection of <strong>layout</strong>. Each layout generates a finished final image. Layout, in turn, is a collection of <strong>layers</strong>. Each layer also generates an image, but they are overlapped to produce the final image. Any layout must have at least 1 layer.</p>
+<p>A layer is a hierarchical structure of <strong>blocks</strong>. Each block is a graphic primitive (text, image, container for other blocks). Any layer starts with BlockRoot, it's actually a regular block, but it's at the root of the composition. Typically, BlockRoot is a container, which allows to have a complex composition of blocks in a layer.</p>
+<h1 id="folders-structure"><strong>Folders structure</strong></h1>
+<p>The theme should store all the necessary files in the one folder:</p>
+<p><img alt="" src="../_page_3_Picture_2.jpeg" /></p>
+<p>The default theme is located in <app_root> / theme_default /. <strong>Don't touch this folder in any case!</strong></p>
+<p>Custom themes are located in <app_root> / user / themes /.</p>
+<ul>
+<li><strong>theme_description.json</strong>– required file.</li>
+<li><strong>Layouts</strong>– storage of layouts. Required folder.</li>
+<li>Components storage of components that can be reused.</li>
+<li>Styles– storage of global styles.</li>
+<li>Vars – json files in which variables are defined.</li>
+<li>Triggers- storage of triggers that can be reused.</li>
+<li>Fonts –storage of fonts.</li>
+<li>Globals - here can be located global_vars.json, public_properties.json files.</li>
+<li>Images main folder for images. When a layer references an image, it looks for the desired file in that folder.</li>
+<li>Localizations- here can be located localization files. File names are custom.</li>
+</ul>
+<h3 id="theme_descriptionjson"><strong>theme_description.json</strong></h3>
+<ul>
+<li>
+<p><strong>ThemeId</strong> : restricted string global unique identifier of the theme. Only Latin letters, numbers, symbols ".", "_" are allowed. Required. Agreement - specify first the author of the theme, then the dot symbol, then the name of the theme. Example:
+"ThemeId" : "me.my_theme".</p>
+</li>
+<li>
+<p>Name : string theme name, required. Displayed in the app's UI.</p>
+</li>
+<li>Author : string required.</li>
+<li>Description : string optional.</li>
+<li>Version : restricted string theme version, optional. The following format is recommended: "Version" : "1.0.0"</li>
+<li>DownloadUrl : string theme zip file link, optional.</li>
+<li>DefaultLocalizationId : string defines the default localization, optional.</li>
+<li>DisableUnspecifiedLocalization : bool true requires the use of a specific localization, optional.</li>
+<li>LogotypeBehaviours : List<LogotypeBehaviour> see Logotype variants</li>
+<li>RequiredLogotypeVariants : Dictionary<string, string> see Logotype variants</li>
+<li>ForceLiveriesLoading : bool -</li>
+<li>Links: List<ThemeLink> array of URLs displayed in the app's UI. Example:</li>
+</ul>
+<p>{ …, Links : [ { "Url" : "me.com", "Caption" : "My site", "Type" : "SupportAuthor" }, … ] }</p>
+<h1 id="themelink"><strong>ThemeLink</strong></h1>
+<ul>
+<li>Url : string required.</li>
+<li>Caption : string required.</li>
+<li>Type : (General, ThemeRepository, ThemeIssueReport, ThemeDiscussion, SupportAuthor) link type, affects the appearance of the link in the app's UI. Optional, default value = General.</li>
+<li>Order : int affects the order in which links are displayed. Optional, default value = 0;</li>
+<li>RenderCaption : string caption of layout (displayed in the app UI), optional. If the string starts with a small letter, "Render " will automatically be added at the beginning.</li>
+<li>RenderCaptions : Dictionary<string, object> specific layout's captions (optional, only applies to certain RenderType)</li>
+</ul>
+<h1 id="theme-resources"><strong>Theme resources</strong></h1>
+<p>Any custom theme <strong>cannot</strong> use the default theme's resources (fonts, images, etc, all content located into %app_root% / theme_default . All required resources <strong>should be located inside</strong> the theme folder. The only exceptions are flags, logos, badges placed in %app_root% / images . However, access to them is mediated through object properties, such as LogotypePath.</p>
+<p>Linking to a specific image requires:</p>
+<ul>
+<li>
+<ol>
+<li>Place an image (png and jpeg formats are supported, files with extension .png, .jpg, .jpeg) in the folder %theme_folder% / images / . It is possible to have any complex internal hierarchy of the images folder. For example, %theme_folder% / images / bg / light_bg.png</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Specify the path <strong>relative</strong> to the folder %theme_folder% / images / . For example: "Path" : "bg/light_bg.png"</li>
+</ol>
+</li>
+</ul>
+<p>Linking to a specific font:</p>
+<ul>
+<li>
+<ol>
+<li>Place a font file (.ttf and .otf fonts are supported) into %theme_folder% / fonts / folder. For example, %theme_folder% / fonts / f1font.ttf</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>To specify a font , simply pass the name of the font file without the extension:</li>
+</ol>
+</li>
+</ul>
+<p>"FontName" : "f1font"</p>
+<p>It possible to use system fonts, to do this, simply specify the name of the system font:</p>
+<p>"FontName" : "Arial"</p>
+<h1 id="layouts"><strong>Layouts</strong></h1>
+<p>Each theme consists of a set of layouts. Layout - is a markup that defines how a final image should be rendered.</p>
+<p>Layout files located in %theme_folder% / layouts / . One layout - one folder (supports any custom folder's name):</p>
+<ul>
+<li>
+<p>The layout folder contains the following files and folders:</p>
+</li>
+<li>
+<p><strong>layout_description.json</strong>(required).</p>
+</li>
+<li>layer folders (supports any custom folder's name) or layer files (see below).</li>
+<li>imagesfolder (optional).</li>
+<li>varsfolder (optional).</li>
+<li>componentsfolder (optional).</li>
+<li>stylesfolder (optional).</li>
+<li>triggersfolder (optional).</li>
+<li>icon.png(optional). Specifies the icon displayed next to the layout header in the app's UI.</li>
+</ul>
+<p>The theme may <strong>not contain all</strong> the necessary layouts. User can use several different themes at the same time by determining the order of priority. If the theme does not have the required layout, the layout of another theme will be used, in the last case the layout of the default theme will be used.</p>
+<p>Layout can override the default icon in the app's UI next to the title:</p>
+<p>To do this, simply place icon.pngfile inside the layout's folder:</p>
+<ul>
+<li></li>
+</ul>
+<h3 id="layout_descriptionjson"><strong>layout_description.json</strong></h3>
+<ul>
+<li>LayoutName : string name of layout (optional).</li>
+<li><strong>RenderType</strong> : (enum) render type (required). Affects the data that will be passed to the layout. Render types are described below.</li>
+<li>RenderDataType : (enum) render data type (optional, only applies to certain RenderType).</li>
+<li>RenderVersion : int there can be many layouts with the same RenderType and RenderDataType. In this case, you will need to specify an version that affects the order in which layouts are displayed in the app UI. Possible values: 1, 2, 3 (and more), 1 by default.</li>
+<li>RenderCaption : string caption of layout (displayed in the app UI), optional. If the string starts with a small letter, "Render " will automatically be added at the beginning.</li>
+<li>RenderCaptions : Dictionary<string, object> specific layout's captions (optional, only applies to certain RenderType).</li>
+<li>IsShowsAsSegmentQual: bool only for QualResults RenderType: whether this layout should also be displayed for rendering the qualification segment (Q1, Q2, Q3) too (optional, default value: true).</li>
+</ul>
+<p>Basic layouts (race results, qualification results, standings, etc.) with RenderVersion=1 uses the default RenderCaption, but it can be overridden.</p>
+<h4 id="render-types"><strong>Render types</strong></h4>
+<p>Render type determines what data the layout's layers will receive, as well as how the end user can run the layout for rendering.</p>
+<table>
+<thead>
+<tr>
+<th>RenderType</th>
+<th>Root data</th>
+<th>Necessary</th>
+<th>Maximum</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>objects</td>
+<td>render versions</td>
+<td>render versions</td>
+<td>Caption</td>
+</tr>
+<tr>
+<td>RaceResults</td>
+<td>Session, Event</td>
+<td>1 5</td>
+<td></td>
+<td>"Render results"</td>
+</tr>
+<tr>
+<td>QualResults</td>
+<td>Session, Event</td>
+<td>1 5</td>
+<td></td>
+<td>"Render results"</td>
+</tr>
+<tr>
+<td>CombinedQualResults</td>
+<td>Session, Event</td>
+<td>1 5</td>
+<td></td>
+<td>"Render combined results"</td>
+</tr>
+<tr>
+<td>DriverStandings</td>
+<td>Standings</td>
+<td>3 5</td>
+<td></td>
+<td>"Render driver standings"</td>
+</tr>
+<tr>
+<td>TeamStandings</td>
+<td>Standings</td>
+<td>1 5</td>
+<td></td>
+<td>"Render team standings"</td>
+</tr>
+<tr>
+<td>Lineups</td>
+<td>Lineups</td>
+<td>2 5</td>
+<td></td>
+<td>"Render lineups"</td>
+</tr>
+<tr>
+<td>Calendar</td>
+<td>Events</td>
+<td>1 5</td>
+<td></td>
+<td>"Render calendar"</td>
+</tr>
+<tr>
+<td>DriverSessionStatistics</td>
+<td>Statistics, Session, Event</td>
+<td>see below</td>
+<td>see below</td>
+<td>see below</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>DriverSeasonStatistics</th>
+<th>Statistics</th>
+<th>see below</th>
+<th>see below</th>
+<th>see below</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DriverSession</td>
+<td>DriverInfo, Session, Event</td>
+<td>1</td>
+<td>3</td>
+<td>"Render driver session"</td>
+</tr>
+<tr>
+<td>DriverInfo</td>
+<td>DriverInfo</td>
+<td>1</td>
+<td>3</td>
+<td>"Render driver info"</td>
+</tr>
+<tr>
+<td>PenaltySeasonStatistics</td>
+<td>Penalties</td>
+<td>1</td>
+<td>3</td>
+<td>"Render season's penalty statistics"</td>
+</tr>
+<tr>
+<td>PenaltyItem</td>
+<td>Penalty</td>
+<td>1</td>
+<td>3</td>
+<td>"Render penalty"</td>
+</tr>
+<tr>
+<td>PenaltyItems</td>
+<td>Penalties</td>
+<td>1</td>
+<td>3</td>
+<td>"Render penalties"</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Root data objects see "Expressions".</li>
+<li>Maximum render versions maximum number of layouts with the same render type available for rendering.</li>
+<li>Necessary render versions the minimum required number of rendering versions for the specified render type (displayed in the app UI). If the custom theme does not have the required versions, the default theme will be used. For example, for DriverStandings the default theme defines 3 layouts: regular, season progress (pts), season progress (pos). For Lineups, the default theme defines 2 layouts: regular, reserve lineups.</li>
+<li>Default caption the displayed caption (in the app UI) for the layout if RenderCaption has not been set. If RenderVersion &gt; 1 is used, a version number will be added to the default header, e.g. "Render results (2)".</li>
+</ul>
+<h3 id="render-captions"><strong>Render captions</strong></h3>
+<p>Some layouts are used in the app in different places and with different contexts. For example, a layout "PenaltyItems" is used as a layout for rendering all penalties of all sessions of a specific event, as well as only the last event, or as a layout for rendering only user-selected penalties. In each case, a different menu item header should be applied. This is what RenderCaptions property can be used for.</p>
+<table>
+<thead>
+<tr>
+<th>RenderType</th>
+<th>Regular default</th>
+<th>Specific render captions</th>
+<th>Default value of specific render</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>caption</td>
+<td></td>
+<td>captions</td>
+</tr>
+<tr>
+<td>QualResults</td>
+<td>"Render results"</td>
+<td>"QualSegment"</td>
+<td>"QualSegment" : "Render segment"</td>
+</tr>
+<tr>
+<td>PenaltyItems</td>
+<td>"Render penalties"</td>
+<td>"EventPenalties", "EventPenaltiesWithSelection", "LastEventPenalties",</td>
+<td>"EventPenalties" : "Render event selection)..." ,</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>penalties" ,</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>"EventPenaltiesWithSelection" :</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>"Render event penalties (with</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>"LastEventPenalties" : "Render last</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>event's penalties",</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>"LastEventPenaltiesWithSelection"</td>
+<td>"LastEventPenaltiesWithSelection" :</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>"Render last event's penalties (with</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>selection)..."</td>
+</tr>
+</tbody>
+</table>
+<h2 id="render-data-types"><strong>Render data types</strong></h2>
+<p>Some layouts using the same RenderType and RenderVersion may receive different data. The most obvious example is statistics: it may be different, but the layout architecture is similar for all types of statistics. For example, the default theme defines only one layout of type "DriverSessionStatistics", and with the help of variables and expressions allows to render different types of statistics.</p>
+<p>However, if necessary, it possible to create a layout that will be used to render only a specific type of data. And with RenderVersion, there can be several kinds of such layouts. It is for this purpose that RenderDataType property is used:</p>
+<pre><code>&quot;RenderType&quot; : &quot;DriverSessionStatistics&quot;,
+</code></pre>
+<pre><code>&quot;RenderDataType: &quot;AttackRating&quot;
+</code></pre>
+<p>If RenderDataType is not defined in layout_description.json, this layout will be used by default for all data types.</p>
+<table>
+<thead>
+<tr>
+<th>RenderDataType</th>
+<th>Necessary</th>
+<th>Maximum render</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>render versions</td>
+<td>versions</td>
+<td>Caption</td>
+</tr>
+<tr>
+<td>PureRacePaceRating</td>
+<td>1</td>
+<td>2</td>
+<td>"Render pure race pace"</td>
+</tr>
+<tr>
+<td>ConsistancyRating</td>
+<td>1</td>
+<td>2</td>
+<td>"Render consistency rating"</td>
+</tr>
+<tr>
+<td>FastestLaps</td>
+<td>1</td>
+<td>2</td>
+<td>"Render fastests laps"</td>
+</tr>
+<tr>
+<td>LongestStints</td>
+<td>1</td>
+<td>2</td>
+<td>"Render longest stints"</td>
+</tr>
+<tr>
+<td>AttackRating</td>
+<td>1</td>
+<td>2</td>
+<td>"Render attack rating"</td>
+</tr>
+<tr>
+<td>DefenseRating</td>
+<td>1</td>
+<td>2</td>
+<td>"Render defense rating"</td>
+</tr>
+<tr>
+<td>TopBattles</td>
+<td>1</td>
+<td>2</td>
+<td>"Render top battles"</td>
+</tr>
+</tbody>
+</table>
+<h1 id="rendertype-driversessionstatistics">RenderType: <strong>DriverSessionStatistics</strong></h1>
+<h1 id="rendertype-driverseasonstatistics">RenderType: <strong>DriverSeasonStatistics</strong></h1>
+<table>
+<thead>
+<tr>
+<th>RenderDataType</th>
+<th>Necessary</th>
+<th>Maximum</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>render versions</td>
+<td>render versions</td>
+<td>Caption</td>
+</tr>
+<tr>
+<td>AvgPoints</td>
+<td>1</td>
+<td>1</td>
+<td>"Render avg of points"</td>
+</tr>
+<tr>
+<td>AvgQualPos</td>
+<td>1</td>
+<td>1</td>
+<td>"Render avg of qualification position"</td>
+</tr>
+<tr>
+<td>AvgRacePos</td>
+<td>1</td>
+<td>1</td>
+<td>"Render avg of race position"</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>FinishesBestSeries</th>
+<th>1</th>
+<th>1</th>
+<th>"Render finishes best series"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FinishesPercent</td>
+<td>1</td>
+<td>1</td>
+<td>"Render finishes percent"</td>
+</tr>
+<tr>
+<td>GainedPositions</td>
+<td>1</td>
+<td>1</td>
+<td>"Render grid to finish position change"</td>
+</tr>
+<tr>
+<td>PenaltyPoints</td>
+<td>1</td>
+<td>1</td>
+<td>"Render "penalty points"</td>
+</tr>
+<tr>
+<td>PenTimeAllAvg</td>
+<td>1</td>
+<td>1</td>
+<td>"avg sum of penalty times"</td>
+</tr>
+<tr>
+<td>PenTimeAllSum</td>
+<td>1</td>
+<td>1</td>
+<td>"sum of penalty times"</td>
+</tr>
+<tr>
+<td>PenTimeIngameAvg</td>
+<td>1</td>
+<td>1</td>
+<td>"avg of ingame penalty time"</td>
+</tr>
+<tr>
+<td>PenTimeIngameSum</td>
+<td>1</td>
+<td>1</td>
+<td>"sum of ingame penalty time"</td>
+</tr>
+<tr>
+<td>PenTimeStewardAvg</td>
+<td>1</td>
+<td>1</td>
+<td>"avg of steward's penalty time"</td>
+</tr>
+<tr>
+<td>PenTimeStewardSum</td>
+<td>1</td>
+<td>1</td>
+<td>"sum of steward's penalty time"</td>
+</tr>
+<tr>
+<td>PointsBestSeries</td>
+<td>1</td>
+<td>1</td>
+<td>"points best series"</td>
+</tr>
+<tr>
+<td>TotalTyresUsage</td>
+<td>1</td>
+<td>1</td>
+<td>"tyre compound usage"</td>
+</tr>
+</tbody>
+</table>
+<h1 id="layers"><strong>Layers</strong></h1>
+<p>Each layout can include an unlimited number of layers (minimum – 1). The layer - is a single json file. Within itself, it must define a root block (in most cases, it is a container that includes other blocks).</p>
+<p>There are two options for locating the layer files: in a subfolders or directly in the layer folder:</p>
+<p><img alt="" src="../_page_11_Picture_3.jpeg" /></p>
+<ul>
+<li>
+<p><strong>Subfolder</strong>: the layer's folder must be located in layout folder, the <strong>folder name must start</strong> with "layer". The subfolder should contain a single json file with an unspecified name. Optionally, subfolders "vars", "components", "styles", "triggers" with corresponding json files can be created in the subfolder, which will be owned by the layer:
+<img alt="" src="../_page_11_Picture_5.jpeg" /></p>
+</li>
+<li>
+<p><strong>Json file</strong>: the layer file must be located in layout folder and the <strong>file name must start</strong> with "layer":
+<img alt="" src="../_page_11_Figure_7.jpeg" /></p>
+</li>
+</ul>
+<p>It can mix both the folder option and the file option.</p>
+<p>Subfolder option: the <strong>folder name</strong> of the layer file <strong>defines</strong> the layer name. File option: the <strong>file name</strong> of the layer <strong>defines</strong> the layer name. The <strong>rendering order</strong> of layers, which is <strong>very important</strong>, <strong>depends on the layer name</strong>. Optimal working set:</p>
+<ul>
+<li>background layer</li>
+<li>main layer</li>
+</ul>
+<p>First layer (which is supposed to be the background) has its own specific rendering behavior:</p>
+<ul>
+<li>
+<p>If Width or Height for <strong>BlockRoot</strong> is not specified, it will automatically be set equal to the final image size.</p>
+</li>
+<li>
+<p>If Width or Height exceeds the final size of the image (the maximum size of the width and height of all other layers) then the layer size will be cut off.</p>
+</li>
+<li>
+<p>If Width or Height is less than the final image size (the maximum width and height of all the other layers), then the layer size will be rescaled.</p>
+</li>
+</ul>
+<p>An example of the contents of the layer:</p>
+<p><img alt="" src="../_page_12_Picture_0.jpeg" /></p>
+<h3 id="asset-inheritance"><strong>Asset inheritance</strong></h3>
+<p>The layer folder may contains the following folders:</p>
+<ul>
+<li>imagesfolder (optional).</li>
+<li>varsfolder (optional).</li>
+<li>componentsfolder (optional).</li>
+<li>stylesfolder (optional).</li>
+<li>triggersfolder (optional).</li>
+</ul>
+<p>The same folders can also be located in the layout's root folder or in the theme's root folder. If the requested asset/component/style/image has the same name/file name at different levels (layer, layout or theme level), the resource will be searched first in the layer folder, then in the layout folder and only finally in the theme level. In this way it is possible to override the same resources at different levels. This also applies to component/style blocks defined inside the layer json file.</p>
+<h1 id="logotypes"><strong>Logotypes</strong></h1>
+<p>Logotypes - are images that are automatically associated with various database objects. The agreement is used for this purpose.</p>
+<table>
+<thead>
+<tr>
+<th>Caregory</th>
+<th>Object type (renderer API)</th>
+<th>Target Folder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nation</td>
+<td>NationRenderData</td>
+<td>/ images / flags</td>
+</tr>
+<tr>
+<td>Game</td>
+<td>GameRenderData</td>
+<td>/ images / logotypes / games</td>
+</tr>
+<tr>
+<td>Vendor</td>
+<td>VendorRenderData</td>
+<td>/ vendors / images / logotypes</td>
+</tr>
+<tr>
+<td>CarClass</td>
+<td>CarClassRenderData</td>
+<td>/ images / logotypes / classes</td>
+</tr>
+<tr>
+<td>Car</td>
+<td>CarRenderData</td>
+<td>/ images / logotypes / cars</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>TeamRenderData</td>
+<td>/ images / logotypes / teams</td>
+</tr>
+<tr>
+<td>Track</td>
+<td>TrackRenderData</td>
+<td>/ circuits / images / logotypes</td>
+</tr>
+<tr>
+<td>Championship</td>
+<td>ChampionshipRenderData</td>
+<td>/ images / logotypes / championships</td>
+</tr>
+<tr>
+<td>Season</td>
+<td>SeasonRenderData</td>
+<td>/ images / logotypes / seasons</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>EventRenderData</td>
+<td>/ images / logotypes / events</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>DriverRenderData</td>
+<td>/ driver / images _avatars /</td>
+</tr>
+</tbody>
+</table>
+<p>When the app's UI or theme requires a logotype for a specific object, a rather complex algorithm is used, which is, however, quite flexible:</p>
+<ul>
+<li>
+<ul>
+<li>Any invalid characters (for the file system) in the name will be removed when searching for the logotype file.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>1.1. User folder + target folder. For example, "<app_root> / user / images / logotypes / teams /".</li>
+<li>1.2. Current theme's folder (the theme selected by the user in the app) + target folder. For example, "<app_root> / user / themes / my_custom_theme / images / logotypes / teams /". This means that <strong>the theme can override the default logotypes</strong>.</li>
+<li>1.3. Default logotypes. For example, "<app_root> / images / logotypes / teams /".</li>
+</ul>
+</li>
+<li>
+<ol>
+<li><strong>The order of the paths matters</strong>. The logo is first searched in folder 2.1, then 2.2, then 2.3. This applies to all file names. For example, if the current theme's folder contains "red bull" file, but not contains "red.bull.2023", then the logo from the default folder will be selected. This behavior can be changed using the property - UseFallbackSource (see below).</li>
+</ol>
+</li>
+<li></li>
+<li>
+<ol>
+<li>The file is searched in the folder and in all subfolders. This means that the <strong>folder hierarchy can be as complex as needed</strong>. However, it is not allowed to have two files with the same name (no matter what the extension is), regardless of which subfolder they are located in.</li>
+</ol>
+</li>
+</ul>
+<h3 id="logotype-variants"><strong>Logotype variants</strong></h3>
+<p>The process of choosing a logo for a specific object, however, is more complex. Because there may be a situation when in some cases it is necessary to use one version of the same logo, and in other cases - a different one.</p>
+<p>List of available variants:</p>
+<ul>
+<li>default</li>
+<li>alternative</li>
+<li>dark</li>
+<li>light</li>
+<li>grayed</li>
+</ul>
+<p>A file appendix is used to separate logos by version: {filename)<strong>{appendix).{extension}. For example, default version - "red_bull.png", alternative version – "red_bull__alternative.png", dark version – "red_bull__dark.png", etc. Note, it need use <strong>two consecutive</strong> underscores ( _ and _ ) to separate the name and the variant: : {filename)</strong>{appendix).{extension}.</p>
+<p>To control the search behavior for the desired logotypes, it need to use "LogotypeBehaviours" property in the theme_description.jsonfile.</p>
+<p><img alt="" src="../_page_14_Picture_11.jpeg" /></p>
+<p>"LogotypeBehaviours" is a list of objects of type LogotypeBehaviour:</p>
+<ul>
+<li>Category : string logotype category (see table above).</li>
+<li>Variant : enum (default, alternative, dark, light, grayed) logotype variant for the specified category. Optional, default value - "default".</li>
+<li>UseFallbackVariant : bool whether to search for a default variant, in case the logotype of the required variant was not found. Optional, default value – "true".</li>
+<li>UseFallbackSource : bool whether to search for a logotype in the default folder if the required logo was not found in the theme folder. Optional, default value – "true".</li>
+<li>SetVariantByDefault : bool whether the specified variant should be used as the default variant (see below). Optional, default value – "false".</li>
+</ul>
+<p>To get the path to a specific variant logo it can use NamedRenderObject properties (class of renderer data API, see manual's appendix):</p>
+<p><img alt="" src="../_page_15_Picture_3.jpeg" /></p>
+<p>NamedRenderObject is a base class for objects that can have a name (TeamRenderData, DriverRenderData, etc). For example, to get dark variant of the logo for an object of type TeamRenderData, it can use the following expression:</p>
+<h1 id="teamdarklogotypepath">{Team.DarkLogotypePath}</h1>
+<p><strong>Important note</strong>: for optimization purposes, by default the app does NOT search for and fills in different logo variants other than the default one. Therefore, the theme should explicitly set for each for logo's сategory a list of variant that the app should search for:</p>
+<p><img alt="" src="../_page_15_Picture_7.jpeg" /></p>
+<p>For this purpose, RequiredLogotypeVariants property of type Dictionary<logotype_category, List\<logotype_variant>> is used in theme_description.json.</p>
+<p>Unspecified by a specific variant LogotypePath property of NamedRenderObject normally returns the default variant. However, a theme can override this behavior by using the property SetVariantByDefault of LogotypeBehaviour.</p>
+<p>For example, if theme_description.jsondefines it:</p>
+<p><img alt="" src="../_page_16_Picture_1.jpeg" /></p>
+<p>LogotypePath property (of TeamRenderDataobjects) will equals AlternativeLogotypePaths.</p>
+<h1 id="liveries"><strong>Liveries</strong></h1>
+<p>Liveries - are image files that are associated with either a specific team or a specific car.</p>
+<p>The livery files must be located in one of these folder:</p>
+<ul>
+<li><app_root> / images / liveries- default liveries</li>
+<li><app_root> / user / images / liveries- user liveries</li>
+<li><theme_folder> / images / liveries– theme's liveries</li>
+</ul>
+<p>The internal folder hierarchy can be freely defined. The maximum priority is given to liveries retrieved from the theme folder. Only "png" images are supported.</p>
+<p>The name of the livery file must fully match either the team unique ID or the car unique ID. For example, "red.bull.2023.png" or "bmw.m4gt3.png". However, additional livery variants for the same team/car are supported. To add additional variant, just put another livery file and name it using prefix:</p>
+<p>{teamID}.{prefix}.png</p>
+<p>For example, "red.bull.2023.<strong>v2</strong>.png". Further, on the line-ups page of the app, it possible to select a special livery variant for a specific driver.</p>
+<p>Render data objects can automatically provide the path to the livery file. It supports TeamRenderData, CarRenderData, DriverSessionRenderData, DriverSeasonRenderData.</p>
+<p>Note 1: for the app to support loading and displaying liveries in the UI, it must activate "Enable liveries support" option in the app's options (disabled by default).</p>
+<p>Note 2: if the theme uses liveries somewhere in its code, it need to set ForceLiveriesLoading option to true in the theme_description.jsonfile</p>
+<h1 id="block"><strong>Block</strong></h1>
+<p>Rendering is based on a hierarchy of block objects. There are the following types of blocks:</p>
+<ul>
+<li><strong>stack</strong> (container)</li>
+<li><strong>itemstack</strong> (container)</li>
+<li><strong>dock</strong> (container)</li>
+<li><strong>grid</strong> (container)</li>
+<li><strong>table</strong> (container)</li>
+<li><strong>canvas</strong> (container)</li>
+<li>image</li>
+<li>text</li>
+<li>shape</li>
+<li>component</li>
+<li>style</li>
+</ul>
+<p>Block-containers may include other blocks (in Items property for most). To create a markup, it need to describe the blocks and their properties.</p>
+<p>The layer always starts with a description of the <strong>BlockRoot</strong>:</p>
+<p><img alt="" src="../_page_18_Picture_15.jpeg" /></p>
+<h2 id="block-properties"><strong>Block properties</strong></h2>
+<p>The usual json properties are used to describe the block. The following is a specification of the properties of the blocks.</p>
+<p>For example, this</p>
+<p>means that it describe Opacity property and set its value as a number between 0 and 100:</p>
+<p>Data types</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th></th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td></td>
+<td>string value</td>
+<td>"text"</td>
+</tr>
+<tr>
+<td>int</td>
+<td></td>
+<td>number</td>
+<td>10</td>
+</tr>
+<tr>
+<td>bool</td>
+<td></td>
+<td>boolean value (true, false)</td>
+<td>false</td>
+</tr>
+<tr>
+<td>color</td>
+<td></td>
+<td>color value (see further)</td>
+<td>"#FF15AB18"</td>
+</tr>
+<tr>
+<td>List&lt; object</td>
+<td>&gt;</td>
+<td>array of objects of type object</td>
+<td>[ { BlockType : "image" },</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>{BlockType : "text" } ]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dictionary<string, object></td>
+<td>key-value array</td>
+<td>"Key1" : "Value1", "Key2" : "Value2</td>
+</tr>
+<tr>
+<td>object</td>
+<td>bool universal type (can be string , ,</td>
+<td></td>
+</tr>
+<tr>
+<td>int</td>
+<td>, etc)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="common-properties-for-any-type-of-block"><strong>Common properties for any type of block</strong></h4>
+<ul>
+<li>BlockType (required)</li>
+<li>Name : string</li>
+<li>RenderIf : bool</li>
+<li>RenderForce : bool</li>
+<li>Opacity : int (0-100)</li>
+<li>Width : int width in pixels, support string values ("*", "auto")</li>
+<li>Height : int height in pixels, support string values ("*", "auto")</li>
+<li>MinWidth : int</li>
+<li>MinHeight : int</li>
+<li>MaxWidth : int</li>
+<li>MaxHeight : int</li>
+<li>WidthPercent : int (0-100) determines the percentage of the width of the parent block's available space. A value of 100 is equivalent to setting StretchWidth to true</li>
+<li>HeightPercent: int (0-100) determines the percentage of the height of the parent block's available space. A value of 100 is equivalent to setting StretchHeight to true</li>
+<li>StretchWidth : bool indicates whether all available space should be filled (by width)</li>
+<li>StretchHeight : bool indicates whether all available space should be filled (by height)</li>
+<li>HorizontalAlignment : (Left, Right, Center)</li>
+<li>VerticalAlignment : (Top, Center, Bottom)</li>
+<li>Margin : string (single value ("4") margin 4 pixels for all sides, two values ("4, 8") margin 4 pixels for left and right side, 8 pixels for top and bottom side, fourth values ("4, 8, 12, 16") – margin for left, top, right, bottom side accordingly</li>
+<li>MarginLeft, MarginTop, MarginRight, MarginBottom : int</li>
+<li>Padding, PaddingLeft, PaddingTop, PaddingRight, PaddingBottom similarly margin</li>
+<li>Background : color</li>
+<li>BackgroundImage : string path to image to be used as block background</li>
+<li>UseBackgroundCrop : bool whether background image should be cropped</li>
+<li>BackgroundImageOpacity : int (0-100)</li>
+<li>GridRow : int row number if block is child for grid</li>
+<li>GridCol : int column number if block is child for grid</li>
+<li>PositionX : int x position if block is child for canvas</li>
+<li>PositionY : int y position if block is child for canvas</li>
+<li>Colorize : ColorizeOptions colorize the final block image using by specific color</li>
+<li>ColorizeBackground : ColorizeOptions colorize background of the block using by specific color</li>
+<li>Triggers : List<TriggerItem> triggers for properties</li>
+<li>Source : object data source (text, image or collection path)</li>
+<li>Vars: Dictionary<string, object>. Defines local block variables. Hierarchically inherited by all underlying blocks. Overrides all higher-level variables (global and local parent block variables by hierarchy)</li>
+<li>Items : List<Block> array of nested blocks (available for block-containers)</li>
+<li>FontName : string (only text block) automatically substituted into TextOptions. Convenient way to determine the font name.</li>
+<li>FontSize * : string (only text block) automatically substituted into TextOptions.</li>
+<li>Foreground : color (only text block) automatically substituted into TextOptions.</li>
+<li>Orientation * : (Horizontal, Vertical) available for stack, dock, itemstack.</li>
+<li>Spacing * : int free space between nested blocks, available for stack, dock, itemstack.</li>
+<li>Components : List<Block> defines components available for all nested blocks, including down the hierarchy.</li>
+<li>Styles : List<Block> defines styles available for all nested blocks, including down the hierarchy.</li>
+</ul>
+<p>Items applies to the following blocks: stack, dock, grid, canvas.</p>
+<p>For convenience, the most common properties (FontName, Orientation, etc) that are located in block options are placed in the block itself too. You can use them both ways, but the block properties have higher priority than the option properties.</p>
+<p>Source duplicates specific properties for blocks (ImagePath, Text, etc). Also has a higher priority.</p>
+<p>Width and Height are 0 by default. This means that the engine will automatically calculate the width or height of the block depending on the content. In case you want to try to fill all the available space, you can specify the symbol "*" instead of a numeric value.</p>
+<p>An example of a description of a simple block:</p>
+<p><img alt="" src="../_page_20_Picture_16.jpeg" /></p>
+<p><strong>Layer</strong> can contain only <strong>one</strong> root block. It must be specified as an object for the "<strong>BlockRoot</strong>" property:</p>
+<table>
+<thead>
+<tr>
+<th>2</th>
+<th>"BlockRoot": {</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>з</td>
+<td>"Name": "mainStack",</td>
+</tr>
+<tr>
+<td></td>
+<td>"BlockType": "stack",</td>
+</tr>
+<tr>
+<td>4</td>
+<td>"Margin": "64, 40, 64, 40",</td>
+</tr>
+<tr>
+<td>б</td>
+<td>"Orientation": "Vertical",</td>
+</tr>
+<tr>
+<td>7</td>
+<td>"Items": [ //header block</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>"Name": "headerBlock",</td>
+</tr>
+<tr>
+<td>11</td>
+<td>"BlockType": "dock",</td>
+</tr>
+<tr>
+<td>12</td>
+<td>"Orientation": "Horizontal",</td>
+</tr>
+<tr>
+<td>13</td>
+<td>"Items": [</td>
+</tr>
+</tbody>
+</table>
+<p>It is recommended to choose <strong>stack</strong>, <strong>dock</strong> or <strong>grid</strong> as the root block.</p>
+<h1 id="block-types-and-block-options"><strong>Block Types and Block Options</strong></h1>
+<p>Individual properties that are required for a specific type of block are placed in separate objects - <strong>block options</strong>. You can see it in the screenshots above ("ImageOptions"). It is <strong>not</strong> always necessary to specify this object. The following are properties for specific block options.</p>
+<h3 id="image"><strong>Image</strong></h3>
+<h4 id="blocktype-image-blockoptions-imageoptions">BlockType: image BlockOptions: ImageOptions</h4>
+<p>Used to display an image.</p>
+<ul>
+<li>Path : string</li>
+<li>DefaultPath : string</li>
+<li>HorizontalAlignment : (Left, Center, Right)</li>
+<li>VerticalAlignment : (Top, Center, Bottom)</li>
+<li>Opacity : int</li>
+</ul>
+<p>Path property (also can be use Source property of the block) specifies either the data object or the path to the image file (.png, .jpg, .jpeg). There are three options for specifying a path:</p>
+<ul>
+<li>Absolute path ("C:\MyPictures\picture.png"). Removed in 0.9.5.</li>
+<li>Related path ("separators/separator_red.png") - need to specify the full path to the file, including the extension, relative to "images" folder located in the root of the theme (or layout/layer).</li>
+</ul>
+<p>Only filename ("picture"), also can be without the file extension – the file with this name is searched for in %mod_folder% first, then %theme_default% (including all subfolders). If no file extension was specified, the png and jpg extensions are automatically substituted. Removed in 0.9.5.</p>
+<p>DefaultPath is used in case it failed to retrieve an image from the Path property.</p>
+<h3 id="text"><strong>Text</strong></h3>
+<p>BlockType: text BlockOptions: TextOptions</p>
+<p>Used to display a text.</p>
+<ul>
+<li>Text : string</li>
+<li>FontName : string, if empty use value of the global variable "FontNameDefault"</li>
+<li>FontSize : int, if empty use value of the global variable "FontSizeDefault"</li>
+<li>FontStyle : (Regular, Bold, Italic, BoldItalic) might not work yet</li>
+<li>Foreground : color, if empty use value of the global variable "ForegroundDefault"</li>
+<li>TextAlignment : (Start, End, Center) might not work yet</li>
+<li>HorizontalAlignment : (Left, Center, Right)</li>
+<li>VerticalAlignment : (Top, Center, Bottom)</li>
+<li>LineSpacing : int</li>
+<li>Wrap : bool might not work yet</li>
+<li>ColorizeRating : ColorizeRatingOptions set the foreground color depending on the rating value:</li>
+</ul>
+<h1 id="colorizeratingoptions"><strong>ColorizeRatingOptions</strong></h1>
+<ul>
+<li>IsEnabled : bool</li>
+<li>Level : int (0-100) this value will determine the color</li>
+<li>GradientStops : List<GradientStop> gradientstop list for the custom color assignment algorithm. If this property is not specified, the default values are used.</li>
+</ul>
+<h1 id="gradientstop"><strong>GradientStop</strong></h1>
+<ul>
+<li>Color : color</li>
+<li>Offset : int (0-100)</li>
+</ul>
+<p>To make the text wrap, it may need to force the width of the text block. Dev in progress.</p>
+<h3 id="stack-and-dock"><strong>Stack and Dock</strong></h3>
+<h4 id="blocktypes-stack-and-dock-blockoptions-paneloptions">BlockTypes: stack and dock BlockOptions: PanelOptions</h4>
+<p>Container-block, which to locate one or more nested blocks. Stack arrange nested (inner) blocks sequentially, one by one:</p>
+<p><img alt="" src="../_page_23_Figure_18.jpeg" /></p>
+<p>Dock is the same stack, except:</p>
+<ul>
+<li>By default it fills all available space (StretchWidth or StretchHeight is <strong>true</strong>, depending on the Orientation value)</li>
+<li>If inner block or blocks specify a horizontal (or vertical) alignment, dock uses this to dock to sides of the block accordingly:</li>
+</ul>
+<p><img alt="" src="../_page_24_Figure_2.jpeg" /></p>
+<p>Only one inner block can specify center alignment (horizontal or vertical).</p>
+<ul>
+<li>Orientation : (Horizontal, Vertical)</li>
+<li>HorizontalDirection: (LeftToRight, RightToLeft)</li>
+<li>VerticalDirection: (TopToBottom, BottomToTop)</li>
+<li>Spacing : int spacing in pixels between inner blocks</li>
+</ul>
+<h2 id="itemstack"><strong>ItemStack</strong></h2>
+<p>BlockType: itemstack BlockOptions: ItemStackOptions and PanelOptions</p>
+<p>Itemstack is the same stack, but inner blocks are generated automatically based on the collection from the data. Items property is ignored.</p>
+<ul>
+<li>ItemSource : string, data access expression (only for collection/list)</li>
+<li>ItemTemplate: block template for each inner blocks</li>
+<li>SortMember: string, can be data access expression item's property name for sorting collection</li>
+<li>OrderBy, OrderBy2, OrderBy3, OrderByDescending, OrderByDescending2, OrderByDescending3 : string, can be data access expression – item's property name for sorting collection</li>
+<li>FilterMember : string, can be data access expression item's property name for filtering collection</li>
+<li>FilterMemberValue : string value of the property by which the collection will be filtered</li>
+<li>Reverse : bool whether the collection elements should be reversed</li>
+<li>Limit : int limiting the number of items in the collection</li>
+<li>IndexStart: int starting index of the collection</li>
+<li>IndexEnd: int, ending index of the collection</li>
+<li>TakeItemIndex : int required index of the collection (will be consist only of one item by specified index)</li>
+<li>TakeItemsFirst : int specifies the number of the first items of the collection to be included</li>
+<li>TakeItemsLast : int specifies the number of the last items of the collection to be included</li>
+<li>CollectionPart : string specify the part of the collection to be used (for example: "1/3" will be used only first third of the collection, "3/3" - will be used only last third of the collection)</li>
+</ul>
+<h2 id="grid"><strong>Grid</strong></h2>
+<h1 id="blocktype-grid-blockoptions-gridoptions">BlockType: grid BlockOptions: GridOptions</h1>
+<p>Container for arrangement of inner blocks in the form of a grid:</p>
+<table>
+<thead>
+<tr>
+<th>ROW 0 COL 0</th>
+<th>ROW 0 COL 1</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROW 1 COL 0</td>
+<td>ROW 1 COL 1</td>
+<td>ROW 1 COL 2</td>
+</tr>
+<tr>
+<td></td>
+<td>ROW 2 COL 1 GRID</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Grid automatically calculates column widths and row heights based on the dimensions of the inner blocks. To specify in which column or which row the block should be placed, it need to</p>
+<p>specify the GridCol and GridRow properties respectively. Only one block can be placed in one cell.</p>
+<ul>
+<li>Rows : List<GridRowDefinition></li>
+<li>Cols: List<GridColDefinition></li>
+</ul>
+<h1 id="gridrowdefinition"><strong>GridRowDefinition</strong></h1>
+<ul>
+<li>Height : int height of the specific row</li>
+<li>IsStretchHeight: bool indicates whether all available space should be filled (by height), only one row can be set to true.</li>
+</ul>
+<h2 id="gridcoldefinition"><strong>GridColDefinition</strong></h2>
+<ul>
+<li>Width : int width of the specific column</li>
+<li>IsStretchWidth: bool indicates whether all available space should be filled (by width), only one column can be set to true.</li>
+</ul>
+<h3 id="canvas"><strong>Canvas</strong></h3>
+<h4 id="blocktype-canvas-blockoptions-canvasoptions">BlockType: canvas BlockOptions: CanvasOptions</h4>
+<p>A container that arranges inner blocks in an manually way. Each inner block must define PositionX and PositionY to indicate its leftmost coordinate. CanvasOptions currently not contains any properties.</p>
+<h2 id="table"><strong>Table</strong></h2>
+<h4 id="blocktype-table-blockoptions-tableoptions">BlockType: table BlockOptions: TableOptions</h4>
+<p>Generates blocks as a table based on the collection/list. Items property is <strong>not</strong> used.</p>
+<ul>
+<li>ItemsSource : string, data access expression (only for collection/list)</li>
+<li>HeaderTemplate : block template for table headers (located above each column)</li>
+<li>HeaderHeight : int</li>
+<li>RowHeight : int</li>
+<li>RowCount : int</li>
+<li>ColSpacing : int</li>
+<li>RowSpacing : int</li>
+<li>SeparatorSpace : int additional space if column is separator</li>
+<li>GroupSpaceReduction : int space reduction between columns same groupID</li>
+<li>SortMember: string, can be data access expression item's property name for sorting collection</li>
+<li>OrderBy, OrderBy2, OrderBy3, OrderByDescending, OrderByDescending2, OrderByDescending3 : string, can be data access expression – item's property name for sorting collection</li>
+<li>FilterMember : string, can be data access expression item's property name for filtering collection</li>
+<li>FilterMemberValue : string value of the property by which the collection will be filtered</li>
+<li>Reverse : bool whether the collection elements should be reversed</li>
+<li>Limit : int limiting the number of items in the collection</li>
+<li>IndexStart: int starting index of the collection</li>
+<li>IndexEnd: int ending index of the collection</li>
+<li>TakeItemIndex : int required index of the collection (will be consist only of one item by specified index)</li>
+<li>TakeItemsFirst : int specifies the number of the first items of the collection to be included</li>
+<li>TakeItemsLast : int specifies the number of the last items of the collection to be included</li>
+<li>CollectionPart : string specify the part of the collection to be used (for example: "1/3" will be used only first third of the collection, "3/3" - will be used only last third of the collection)</li>
+<li>Columns : List<TableColumnDefinition></li>
+</ul>
+<h1 id="tablecolumndefinition"><strong>TableColumnDefinition</strong></h1>
+<ul>
+<li>Width : int width of the specific column</li>
+<li>MarginLeft : int</li>
+<li>MarginRight : int</li>
+<li>IsStretchWidth: bool indicates whether all available space should be filled (by width), only one column can be set to true</li>
+<li>Header : string text for header template (will be replace text property of any text block of header template)</li>
+<li>RenderIf : bool</li>
+<li>Template : block template for each item of column</li>
+<li>IsSeparator : bool indicates whether the column is a separator</li>
+<li>GroupId : int same group Id (&gt;0) can be set for several column to bring them closer to each other in the column space</li>
+<li>MultiColumnHeadersSource : string data access expression (only for collection/list) for multicolumn headers</li>
+<li>MultiColumnItemsSource : string data access expression (only for collection/list) for multicolumn items</li>
+<li>MultiColumnHeaderTemplate : block template for each item of multicolumns</li>
+</ul>
+<p>Multicolumn- a special feauture for expanding one column into multiple columns:</p>
+<p><img alt="" src="../_page_28_Picture_1.jpeg" /></p>
+<h3 id="shape"><strong>Shape</strong></h3>
+<p>BlockType: shape BlockOptions: ShapeOptions</p>
+<p>Displays a simple figure.</p>
+<ul>
+<li>ShapeType : (rectangle, ellipse) ellipse currently not works properly</li>
+<li>Fill : color</li>
+</ul>
+<h3 id="component"><strong>Component</strong></h3>
+<p>BlockType: component BlockOptions: ComponentOptions</p>
+<p>This block is used to reuse complex blocks in different places in a layer or different layouts. See Components.</p>
+<ul>
+<li>Vars: Dictionary<string, object></li>
+</ul>
+<h3 id="colorizeoptions"><strong>ColorizeOptions</strong></h3>
+<h3 id="blockoptions-colorizeoptions">BlockOptions: ColorizeOptions</h3>
+<p>Specific option object to describe how the background or the final image of the block should be colored.</p>
+<ul>
+<li>Enabled : bool</li>
+<li>Color: color</li>
+<li>BlendPercentage: int (0-100)</li>
+<li>AlphaCompositionMode: (SrcOver, Src, SrcAtop, SrcIn, SrcOut, Dest, DestAtop, DestOver, DestIn, DestOut, Clear, Xor). Can be empty/null. Default value: (SrcATop)</li>
+<li>ColorBlendingMode: (Normal, Multiply, Add, Subtract, Screen, Darken, Lighten, Overlay, HardLight). Can be empty/null. Default value: (Screen).</li>
+</ul>
+<h1 id="components"><strong>Components</strong></h1>
+<p>Components are designed to reuse the same block in different places, different layers or layouts. Fundamentally<strong>,</strong> a <strong>component is a block</strong>. A component can have any type of block (text, image, table, etc) and any complex internal block hierarchy if the root block is block-container.</p>
+<p>The moment the code references a component, the renderer first looks for that component in the resources, and then copies it in its entirety and substitutes it in the caller place.</p>
+<p>There are several options as to where the component can be located:</p>
+<h4 id="1-components-folder-at-the-theme-layout-or-layer-level"><strong>1. "components" folder (at the theme, layout or layer level).</strong></h4>
+<p>Any custom internal folder hierarchy is allowed. There are two formats of json files describing components:</p>
+<ul>
+<li>One file (.json) one component:</li>
+</ul>
+<pre><code>{ &quot;ComponentName&quot;: &quot;MainHeader&quot;, &quot;BlockType&quot; : &quot;text&quot; }
+</code></pre>
+<ul>
+<li>One file (.json) many components:</li>
+</ul>
+<pre><code>[ { &quot;ComponentName&quot; : &quot;MainHeader&quot;, &quot;BlockType&quot; : &quot;text&quot;, … },
+</code></pre>
+<pre><code>{ &quot;ComponentName&quot; : &quot;Footer&quot;, &quot;BlockType&quot; : &quot;stack&quot;, … } ]
+</code></pre>
+<p>In the first case, the component block itself is used as the json root (single populated component). In the second case, the root of the json file is an array of blocks.</p>
+<p>There are two ways to refer to a specific component:</p>
+<ul>
+<li>Specify component name (specified in the "ComponentName" property):</li>
+</ul>
+<pre><code>{ &quot;BlockType&quot; : &quot;component&quot;, &quot;Component&quot; : &quot;Footer&quot; }
+</code></pre>
+<ul>
+<li>Specify the relative file path and file name (without extension), requires the file to have a single populated component:<ul>
+<li>{ "BlockType" : "component", "Component" : "/headers/mainHeader" }</li>
+</ul>
+</li>
+</ul>
+<p>For the second way it is necessary to put the slash in the beginning.</p>
+<h1 id="2-directly-in-layers-code"><strong>2. Directly in layer's code</strong></h1>
+<p>Block-containers (stack, dock, itemstack, canvas, table) have Components property. This property allows to define an array of components that will be available to all childs and so on down the hierarchy.</p>
+<p><img alt="" src="../_page_30_Figure_0.jpeg" /></p>
+<h3 id="component-properties"><strong>Component properties</strong></h3>
+<ul>
+<li>ComponentName : string, (required)
+A prerequisite is that ComponentName property of the root block is defined. If it is a single populated component and all other code references only using the file path, this requirement can be skipped.</li>
+</ul>
+<h4 id="omponent-usage"><em>С</em><strong>omponent usage</strong></h4>
+<p>To use a component, it need to define a block with component type and specify the component's name (or path to the component's json file without extension, using "/" in the beginning of the path) in Component property:</p>
+<p><img alt="" src="../_page_30_Picture_6.jpeg" /></p>
+<h3 id="finding-the-required-component"><strong>Finding the required component</strong></h3>
+<p>When the renderer encounters a block of type component, and if no component file path is specified as the component name, the search order is as follows:</p>
+<ul>
+<li>
+<ol>
+<li>The parent block is found and the presence of the required component is checked in Components property.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>If the required component is not found, Components property of the parent block of the current parent block is checked.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>If the process ends with BlockRoot, the renderer accesses external files.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>If the layer file is defined in a separate folder, the required component is searched in %layer_folder% / components /subfolder.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Next, the component is searched for in %layout_folder% / components /folder.</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>And at the end the component is searched for in the %theme_folder% / <em>с</em>omponents /</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>If the component is not found, the renderer will generate an error.</li>
+</ol>
+</li>
+</ul>
+<h4 id="component-variables"><strong>Component variables</strong></h4>
+<p>Each component can define its own variables. To define a variable, it need to specify the following in the value of the desired property, using angle brackets (within the component/component hierarchy):</p>
+<pre><code>&quot;&lt;component_variable_name&gt;&quot;
+</code></pre>
+<p><img alt="" src="../_page_31_Picture_10.jpeg" /></p>
+<p>In this example, "header" is a component's variable. Then, the moment the component is used in code, it possible to define the values of the component's variables using Vars property inside ComponentOptions property:</p>
+<p><img alt="" src="../_page_31_Figure_12.jpeg" /></p>
+<p>In the example, <header> will be replaced with the string "DRIVER OF THE DAY". • Vars: Dictionary<string, object></p>
+<p>The general rule for replacing component variables is as follows: any text (inside of component) placed in angle brackets ("&lt;", "&gt;") is subject to replacement, according to the variables declared in ComponentOptions. The variable name must completely match the text inside the brackets.</p>
+<p>However, in case you need to use expressions in a component, but the data object is not known at the component's context, you can use the following trick:</p>
+<pre><code>Component: &lt;{data_object.Value}&gt;
+</code></pre>
+<pre><code>Component's variable, declared in Vars: &quot;data_object&quot; : &quot;Item&quot;
+</code></pre>
+<p>The <strong>dot</strong> inside the <strong>expression</strong>, which in turn is between angle brackets changes the principle of variable substitution. The renderer will only change the left side (relative to the point) of the expression:</p>
+<pre><code>&lt;{data_object.Value}&gt; -&gt; {Item.Value}
+</code></pre>
+<p>Example:</p>
+<p><img alt="" src="../_page_32_Picture_8.jpeg" /></p>
+<p>Component:</p>
+<p><img alt="" src="../_page_32_Picture_10.jpeg" /></p>
+<p>The renderer will replace the variable (<strong>data</strong> in this example) with the part of the expression that was declared in Vars: <strong>Item.Value0</strong>. Final expression will be: <strong>{Item.Value0.Value}</strong></p>
+<p>That is, the expression will be combined in two parts, with the left part declared in the place where the component is invoked and the right part declared in the component itself.</p>
+<h1 id="styles"><strong>Styles</strong></h1>
+<p>In cases where it is necessary to apply the same set of properties to different blocks, styles can come in handy. Fundamentally<strong>,</strong> a <strong>style is a block</strong>. It can be of any block type, it has no effect, but it can contain any of nested *Options (TextOptions, ImageOptions, etc). The block type as well as Items property are ignored.</p>
+<p>The moment the code references a style, the renderer first looks for that style in the resources, and then <strong>applies all the style property values to the block</strong> that requests the style. The values of properties directly defined in the block have a higher priority than style properties.</p>
+<p>There are several options as to where the styles can be located:</p>
+<h4 id="1-styles-folder-at-the-theme-layout-or-layer-level"><strong>1. "styles" folder (at the theme, layout or layer level).</strong></h4>
+<p>Any custom internal folder hierarchy is allowed. There are two formats of json files describing styles:</p>
+<ul>
+<li>One file (.json) one style:</li>
+</ul>
+<pre><code>{ &quot;StyleName&quot;: &quot;RegularTextStyle&quot;, &quot;BlockType&quot; : &quot;text&quot;, … }
+</code></pre>
+<ul>
+<li>One file (.json) many styles:</li>
+</ul>
+<pre><code>[ { &quot;StyleName&quot; : &quot;TableHeaderStyle&quot;, &quot;BlockType&quot; : &quot;text&quot;, … },
+</code></pre>
+<pre><code>{ &quot;StyleName&quot; : &quot;DriverAvatarStyle&quot;, &quot;BlockType&quot; : &quot;image&quot;, … } ]
+</code></pre>
+<p>In the first case, the style block itself is used as the json root (single populated style). In the second case, the root of the json file is an array of blocks.</p>
+<p>There are two ways to refer to a specific style:</p>
+<ul>
+<li>Specify style name (specified in the "StyleName" property):<ul>
+<li>{ "BlockType" : "image", "Style" : "DriverAvatarStyle", … }</li>
+</ul>
+</li>
+<li>Specify the relative file path and file name (without extension), requires the file to have a single populated style:</li>
+</ul>
+<pre><code>{ &quot;BlockType&quot; : &quot;text&quot;, &quot;Style&quot; : &quot;/textStyles/regularTextStyle&quot;, … 
+}
+</code></pre>
+<p>For the second way it is necessary to put the slash in the beginning.</p>
+<h1 id="2-directly-in-layers-code_1"><strong>2. Directly in layer's code</strong></h1>
+<p>Block-containers (stack, dock, itemstack, canvas, table) have Styles property. This property allows to define an array of styles that will be available to all childs and so on down the hierarchy.</p>
+<p><img alt="" src="../_page_34_Figure_0.jpeg" /></p>
+<h4 id="style-properties"><strong>Style properties</strong></h4>
+<ul>
+<li>StyleName : string, required.</li>
+<li>StyleBasedOn : string, optional.</li>
+</ul>
+<p>A prerequisite is that StyleName property of the block is defined. If it is a single populated style and all other code references only using the file path, this requirement can be skipped.</p>
+<h2 id="styles-hierarchy"><strong>Styles hierarchy</strong></h2>
+<p>It is possible to have a complex hierarchy of styles. For example, style A can be the parent of styles B and C. All children inherit all values of their parent's properties, but can override any of them or define the value of a new property. In order to specify a parent, a style must specify the parent style name (or path to it) using StyleBasedOn property. The parent style must be defined higher up in the style search hierarchy.</p>
+<h4 id="style-usage"><em>Style</em> <strong>usage</strong></h4>
+<p>To use a style it need to specify the name/path of the style in Style property. All block types have this property.:</p>
+<p><img alt="" src="../_page_34_Picture_9.jpeg" /></p>
+<h2 id="finding-the-required-style"><strong>Finding the required style</strong></h2>
+<p>See Finding the required component, the process is completely similar.</p>
+<h1 id="triggers"><strong>Triggers</strong></h1>
+<p>Triggers are used to change the value of block properties or block options properties under certain conditions. Each block may include a set of triggers (TriggerItem):</p>
+<p><img alt="" src="../_page_36_Picture_2.jpeg" /></p>
+<h1 id="triggeritem"><strong>TriggerItem</strong></h1>
+<ul>
+<li>Condition : <any value> (required) condition under which the trigger will be used. If "ConditionValue" is not set: it is assumed that "bool" value is used (can be "number" type, 0 = false, &gt;0 = true). If "ConditionValue" is set, "Conditon" can be any type/value (it will be forcibly converted to string type during comparison).</li>
+<li>ConditionValue : <any value> is used to set the value at which trigger condition will be true. For example, if "Condition" is 25, and "ConditionValue" is "25", both values will be forcibly converter to string, and final trigger condition will be true.</li>
+<li>ConditionAnd : <any value> additional condition (implement AND logic). If "ConditionAndValue" is not set: it is assumed that "bool" value is used (can be "number" type, 0 = false, &gt;0 = true). If "ConditionAndValue" is set, "ConditonAnd" can be any type/value (it will be forcibly converted to string type during comparison).</li>
+<li>ConditionAndValue : <any value> -similarly to "ConditionValue".</li>
+<li>ConditionOr : <any value> additional condition (implement OR logic). If "ConditionOrValue" is not set: it is assumed that "bool" value is used (can be "number" type, 0 = false, &gt;0 = true). If "ConditionOrValue" is set, "ConditonOr" can be any type/value (it will be forcibly converted to string type during comparison).</li>
+<li>ConditionOrValue : <any value> -similarly to "ConditionValue".</li>
+<li>Setters : List<TriggerPropertyItem></li>
+<li>TriggerName : string used to define the name of external trigger.</li>
+<li>Trigger : string specifies the name of the external trigger.</li>
+</ul>
+<h1 id="triggerpropertyitem"><strong>TriggerPropertyItem</strong></h1>
+<ul>
+<li>Property : string (optional) full path to block's property name ("Foreground" or "TextOptions.Foreground" as example)</li>
+<li>Var : string (optional) name of block's variable. Used to allow a trigger to override a block's variable. If a block does not have a defined variable with this name, it will be automatically added to the block's variables.</li>
+<li>ComponentVar : string (optional) name of component's variable. Used to allow a trigger to override a component's variable. If a block does not have a defined component variable with this name, it will be automatically added to the component's variables.</li>
+<li>Value: object value of property/var/component's var. Can be object of ("*Options", such as ImageOptions, TextOptions, etc) or ColorizeOptions. Overrides the current value of the property/var/component's var.</li>
+</ul>
+<p><img alt="" src="../_page_37_Picture_3.jpeg" /></p>
+<p>TriggerPropertyItem is used primarily for overriding block properties. However, if necessary, it can be used to override a variable or component variable (in the context of the block). To do this, it need to define Var or ComponentVar property (instead Property). Value will be used as value for overrides as well as for property or var/component var.</p>
+<p>For convenience, if it need to override only one property, it can leave TriggerPropertyItem list are empty and specify Property (or Var or ComponentVar) and Value immediately in the trigger:</p>
+<p><img alt="" src="../_page_37_Picture_6.jpeg" /></p>
+<h1 id="external-triggers"><em>External triggers</em></h1>
+<p>Similar to components and styles, it is possible to define a trigger in external files and then reference external triggers by their name or file path. This allows to reuse the same trigger in different places.</p>
+<p><img alt="" src="../_page_38_Picture_2.jpeg" /></p>
+<p>The moment the code references a trigger, the renderer first looks for that trigger in the resources, and then copies it in its entirety and substitutes it in the caller place.</p>
+<p>External trigger can be located into "Triggers"folder (at the theme, layout or layer level). Any custom internal folder hierarchy is allowed. There are two formats of json files describing triggers:</p>
+<ul>
+<li>One file (.json) one component:</li>
+</ul>
+<pre><code>{ &quot;TriggerName&quot;: &quot;ShowLapsTrigger&quot;, &quot;Condition&quot; : … }
+</code></pre>
+<ul>
+<li>One file (.json) many components:</li>
+</ul>
+<pre><code>[ { &quot;TriggerName&quot; : &quot;ShowLapsTrigger&quot;, &quot;Condition&quot; : … },
+</code></pre>
+<pre><code>{ &quot;TriggerName&quot; : &quot;ShowWeatherTrigger&quot;, &quot;Condition&quot; : … } ]
+</code></pre>
+<p>In the first case, the trigger (TriggerItem) itself is used as the json root. In the second case, the root of the json file is an array of trigger (TriggerItem).</p>
+<p>There are tw o ways to refer to a specific trigger:</p>
+<ul>
+<li>Specify component name (specified in the "ComponentName" property):</li>
+</ul>
+<pre><code>{ &quot;Trigger&quot; : &quot;ShowLapsTrigger&quot; }
+</code></pre>
+<ul>
+<li>Specify the relative file path and file name (without extension), requires the file to have a single trigger:</li>
+</ul>
+<pre><code>{ &quot;Trigger&quot; :&quot;/headerTriggers/ShowLapsTrigger&quot; }
+</code></pre>
+<p>For the second way it is necessary to put the slash in the beginning.</p>
+<h1 id="color"><strong>Color</strong></h1>
+<p>The format of the value for a variable of type color:</p>
+<p>Color : "#FF010203"</p>
+<p>Where:</p>
+<ul>
+<li>
+<h1 id="not-required">not required</h1>
+</li>
+<li>FF hex value for opacity (not required)</li>
+<li>01 hex value for red color component</li>
+<li>02 hex value for green color component</li>
+<li>03 hex value for blue color component</li>
+</ul>
+<p>Examples: "#D0A0C0", "D0A0C0"</p>
+<p>Another option – numeric format (0-255), RGB or ARGB:</p>
+<p>Color : "255,0,0" Color : "200, 10, 15, 20"</p>
+<h1 id="variables"><strong>Variables</strong></h1>
+<p>Variables (vars) are a list of the "name" - "value" type (Dictionary<string, object>) :</p>
+<p><img alt="" src="../_page_40_Picture_2.jpeg" /></p>
+<p>They can be defined (upwardly prioritized) :</p>
+<ul>
+<li>%theme_folder% / globals / global_vars.json(lowest priority)</li>
+<li>%theme_folder% / vars /</li>
+<li>%layout_folder% / vars /</li>
+<li>%layer_folder% / vars /</li>
+<li>localization vars</li>
+<li>public properties/vars</li>
+<li>inside block's Vars property (max priority)</li>
+</ul>
+<p>If vars are defined in a separate file, the json root should be a json object with key-value pairs. File names inside vars of folders, internal folder hierarchy does not matter, what matters is the variable name. It is not allowed to have variables with the same name at the same level.</p>
+<p>Similar to components/styles, each level can override the value of the same variable. The immediate parent block variables has the highest priority, global_vars.jsonhas the lowest.</p>
+<p>Expressions are used to access the value of a variable:</p>
+<p><img alt="" src="../_page_40_Picture_14.jpeg" /></p>
+<p>Variable names cannot contain spaces or the dot character.</p>
+<h1 id="public-properties"><strong>Public properties</strong></h1>
+<p>Public properties are designed to allow the end user, using a user-friendly UI, to modify the behavior of the theme. In the end, any custom property is turned into a variable that has a name and a value.</p>
+<table>
+<thead>
+<tr>
+<th>Theme properties</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Presets:</td>
+<td>preset 1</td>
+<td></td>
+<td></td>
+<td>Apply preset</td>
+</tr>
+<tr>
+<td>^ F1 only</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Use F1 fonts</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Pre-header for session: ①</td>
+<td></td>
+<td></td>
+<td>default_value</td>
+<td></td>
+</tr>
+<tr>
+<td>Post-header for session:</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Driver name font size:</td>
+<td></td>
+<td>30</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Render results width:</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Table size: ①</td>
+<td>Medium</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F2 only</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>To define public properties, it need to create <strong>public_properties.json</strong> file in %theme_folder% / globals /folder:</p>
+<p><img alt="" src="../_page_41_Figure_4.jpeg" /></p>
+<p>Example:</p>
+<p><img alt="" src="../_page_41_Picture_6.jpeg" /></p>
+<h2 id="public_propertiesjson"><strong>public_properties.json</strong></h2>
+<ul>
+<li>Properties : List<PublicProperty></li>
+<li>Categories : List<PublicPropertiesCategory> optional</li>
+<li>Presets : List<PublicPropertiesPreset> optional</li>
+</ul>
+<h2 id="publicproperty"><strong>PublicProperty</strong></h2>
+<ul>
+<li>Name : string var's name. Required.</li>
+<li>PublicName : string displayed name in the UI. Required.</li>
+<li>Type : (Bool, Integer, String, Float, Enum) variable type.</li>
+<li>DefaultValue : object.</li>
+<li>Description : string.</li>
+<li>Category : string determines whether a variable belongs to a specific category. Optional.</li>
+<li>MinimumValue : int minimum value for integer, float types. Restricts the user input.</li>
+<li>MaximumValue : int minimum value for integer, float types. Restricts the user input.</li>
+<li>EnumValues : List<string> see Enum properties.</li>
+</ul>
+<h1 id="publicpropertiescategory"><strong>PublicPropertiesCategory</strong></h1>
+<ul>
+<li>Name : string any valid string, spaces are allowed. Only affects the UI, not the renderer.</li>
+<li>Order : int determines the order in which categories are displayed in the app's UI. Optional.</li>
+</ul>
+<h1 id="publicpropertiespreset"><strong>PublicPropertiesPreset</strong></h1>
+<ul>
+<li>Name : string Preset name, spaces are allowed. Only affects the UI, not the renderer.</li>
+<li>DefinedProperties : Dictionary<string, object></li>
+</ul>
+<h2 id="enum-properties"><strong>Enum properties</strong></h2>
+<p>If it is required that the user can select string value from a predefined list of values, properties of type <strong>enum</strong> (Enum) are used:</p>
+<p><img alt="" src="../_page_42_Picture_18.jpeg" /></p>
+<p>In the end, a public property variable of type enum will contain string.</p>
+<h2 id="categories"><strong>Categories</strong></h2>
+<p>Categories are used to group a specific set of properties. Use property Category of PublicProperty object to map. If a property is not mapped to any category, it will be displayed at the beginning of the property list.</p>
+<h2 id="presets"><strong>Presets</strong></h2>
+<p>With presets, the end user can quickly define the values of several properties at once. To define a preset, add it to Presets collection, give it a name and set values for the required properties, using DefinedProperties array of key-value pairs:</p>
+<p><img alt="" src="../_page_43_Picture_2.jpeg" /></p>
+<h1 id="expressions"><strong>Expressions</strong></h1>
+<p>Expressions are used to access data and variables. Most properties (enumerations, like HorizontalAlignment, also support expressions) can use expressions in their value.</p>
+<p>The expression is a string enclosed in curly braces: "{expression}":</p>
+<h2 id="data-source"><strong>Data source</strong></h2>
+<p>The data source for expressions can be:</p>
+<ul>
+<li><strong>Data objects</strong> (see below).</li>
+<li><strong>Variables</strong> (see Variables).</li>
+<li><strong>Public properties</strong> (see Public properties).</li>
+<li><strong>Localization vars</strong> (see Localization support).</li>
+<li>Сurrent block's context ("<strong>Item</strong>", "<strong>ItemIndex</strong>", "<strong>ColumnIndex</strong>")</li>
+</ul>
+<h3 id="data-objects"><strong>Data objects</strong></h3>
+<p>Data objects are described in the data objects API (see Appendix).</p>
+<p>Each render type provides its own set of root data objects:</p>
+<ul>
+<li>RaceResults, QualResults, CombinedQualResults : "Session", "Event"</li>
+<li>DriverStandings, TeamStandings : "Standings"</li>
+<li>Lineups, LineupsReserve : "Lineups"</li>
+<li>Calendar : "Events"</li>
+<li>DriverSessionStatistics:"Statistics", "Session", "Event"</li>
+<li>DriverSeasonStatistics: "Statistics"</li>
+<li>DriverSession: "DriverInfo", "Session", "Event"</li>
+<li>DriverInfo: "DriverInfo"</li>
+<li>PenaltyItem: "Penalty"</li>
+<li>PenaltyItems: "Penalties"</li>
+<li>PenaltySeasonStatistics:"Penalties"</li>
+</ul>
+<p>Mapping root objects to data API classes</p>
+<table>
+<thead>
+<tr>
+<th>Name of the root data object</th>
+<th>Name of the class in API (see appendix)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"LayoutInfo"</td>
+<td>LayoutInfo</td>
+</tr>
+<tr>
+<td>"Season"</td>
+<td>SeasonRenderData</td>
+</tr>
+<tr>
+<td>"Session"</td>
+<td>SessionRenderData</td>
+</tr>
+<tr>
+<td>"Standings"</td>
+<td>StandingsSeasonRenderData</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>"Events"</th>
+<th>EventsSeasonRenderData</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Event"</td>
+<td>EventRenderData</td>
+</tr>
+<tr>
+<td>"Lineups"</td>
+<td>LineupsSeasonRenderData</td>
+</tr>
+<tr>
+<td>"Statistics"</td>
+<td>StatisticsRenderHost</td>
+</tr>
+<tr>
+<td>"DriverInfo"</td>
+<td>(DriverSession) -&gt;</td>
+</tr>
+<tr>
+<td></td>
+<td>DriverSessionRenderHost</td>
+</tr>
+<tr>
+<td></td>
+<td>(DriverInfo) -&gt;</td>
+</tr>
+<tr>
+<td></td>
+<td>DriverRenderHost</td>
+</tr>
+<tr>
+<td>"Penalty"</td>
+<td>PenaltyItemRenderData</td>
+</tr>
+<tr>
+<td>"Penalties"</td>
+<td>(PenaltyItems) -&gt;</td>
+</tr>
+<tr>
+<td></td>
+<td>EventPenaltiesRenderHost</td>
+</tr>
+<tr>
+<td></td>
+<td>(PenaltySeasonStatistics) -&gt;</td>
+</tr>
+<tr>
+<td></td>
+<td>SeasonPenaltiesRenderHost</td>
+</tr>
+</tbody>
+</table>
+<p>"LayoutInfo" and "Season" data objects is available in <strong>all</strong> render types.</p>
+<p>Some of render objects also contains "Name" and "LogoPath" properties (can be null). This can be defined in case the corresponding class inherits from NamedRenderData.</p>
+<p>The full path to the property is used to access the value:</p>
+<h1 id="sessiondriverdaydrivername">"{Session.DriverDayDriver.Name}"</h1>
+<p>If the expression does not contain a dot, the app tries to find a variable with that name.</p>
+<p>For inner blocks of those blocks that use collections (itemstack, table), the following objects can be specified as the root object:</p>
+<ul>
+<li>"Item" access to the current item of the data collection/list</li>
+<li>"ItemIndex" : int index of the current item (starts with 0)</li>
+<li>"ColumnIndex" : int index of the current column (starts with 0, only for table)</li>
+</ul>
+<p>Complex or mismatched types will be converted to string type. It can refer to objects of type byte[] as a path to images (for images that are stored in the database).</p>
+<p>Example of the expression:</p>
+<p><img alt="" src="../_page_45_Figure_12.jpeg" /></p>
+<h3 id="return-value-of-expressions"><strong>Return value of expressions</strong></h3>
+<p>Depending on the context, an expression can return either an object (bool, number, color, etc) or a string. When the context requires a string from an expression, but the expression returns an object, the object will be forced to string.</p>
+<p>If an expression is used to define the value of a block property that requires an object of a specific type (for example, PaddingLeft requires number), there can be only one expression at the root:</p>
+<p>Correct:</p>
+<p><img alt="" src="../_page_46_Picture_4.jpeg" /></p>
+<p>However, if the property requires a string, you can combine expressions however you like.</p>
+<h4 id="ombining-expressions"><em>С</em><strong>ombining expressions</strong></h4>
+<p>It is allowed to enclose expressions in each other, to use an expression as the name of a converter or a converter parameter. The number of enclosures is unlimited. This also applies to localization string substitutions</p>
+<p>For block properties that require a string, it can use multiple expressions on one string or combine an expression with literals:</p>
+<h3 id="escaping-special-symbols"><strong>Escaping special symbols</strong></h3>
+<p>In order to use some characters as literals rather than control characters, you must escape them:</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Escaping symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{</td>
+<td>//{</td>
+</tr>
+<tr>
+<td>}</td>
+<td>//{</td>
+</tr>
+<tr>
+<td>[</td>
+<td>//[</td>
+</tr>
+<tr>
+<td>]</td>
+<td>//]</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>//&lt;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>//&gt;</td>
+</tr>
+<tr>
+<td>= (inside of expression)</td>
+<td>//=</td>
+</tr>
+<tr>
+<td>: (inside of converter's parameters part)</td>
+<td>//:</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<p><img alt="" src="../_page_47_Picture_2.jpeg" /></p>
+<p>This expression will be convertered to :</p>
+<p>"[driver_name]"</p>
+<p>Note: the choice of forward slash instead of backslash is to avoid problems with the json parser, and the need to double slash is to avoid potential problems with the use of URIs and file paths.</p>
+<h1 id="data-converters"><strong>Data Converters</strong></h1>
+<p>Using an expression, it can possible specify a data-converter to convert the data. To do this, add a comma and the word "<strong>Converter</strong>" after the main expression, and then specify the name of the converter after the "<strong>=</strong>" character. Example:</p>
+<h3 id="parameters"><strong>Parameters</strong></h3>
+<p>It is also possible to pass a parameter to the converter. To do this, it need to add</p>
+<pre><code>&quot;Parameter={parameterValue}&quot;
+</code></pre>
+<p>with the value after the converter name (a comma must be added after the converter name):</p>
+<p>Some converters require more than one parameter. To pass them, use</p>
+<p>"Parameters={parameterName1}:{parameterValue1};{parameterName2}:{pa rameterValue2}"</p>
+<p>The order of the parameters is not important.</p>
+<h4 id="onverters-with-one-parameter-or-without-parameters"><em>С</em><strong>onverters (with one parameter or without parameters):</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Converter name</th>
+<th>Description</th>
+<th>Parameter</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>type</td>
+<td></td>
+</tr>
+<tr>
+<td>StringToLowerString</td>
+<td></td>
+<td></td>
+<td>"ABC" -&gt; "abc"</td>
+</tr>
+<tr>
+<td>StringToUpperString</td>
+<td></td>
+<td></td>
+<td>"abc" -&gt; "ABC"</td>
+</tr>
+<tr>
+<td>StringEquals</td>
+<td>string comparison</td>
+<td>string</td>
+<td>"str1", "str1" -&gt; true</td>
+</tr>
+<tr>
+<td>StringNotEquals</td>
+<td>string comparison</td>
+<td>string</td>
+<td>"str1" , "str1" -&gt; false</td>
+</tr>
+<tr>
+<td>EmptyObjectToFalse</td>
+<td>converting null or empty</td>
+<td></td>
+<td>'' -&gt; false</td>
+</tr>
+<tr>
+<td></td>
+<td>value to bool</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EmptyObjectToTrue</td>
+<td>converting null or empty</td>
+<td></td>
+<td>'' -&gt; true</td>
+</tr>
+<tr>
+<td></td>
+<td>value to bool</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BoolReverse</td>
+<td></td>
+<td></td>
+<td>true =&gt; false</td>
+</tr>
+<tr>
+<td>NumberZeroToEmpty</td>
+<td></td>
+<td></td>
+<td>0 =&gt; ''</td>
+</tr>
+<tr>
+<td>NumberEquals</td>
+<td>number comparison</td>
+<td>int (number)</td>
+<td>0, 5 -&gt; false</td>
+</tr>
+<tr>
+<td>NumberNotEquals</td>
+<td>number comparison</td>
+<td>int (number)</td>
+<td>0, 5 -&gt; true</td>
+</tr>
+<tr>
+<td>NumberGreater</td>
+<td>number comparison</td>
+<td>int (number)</td>
+<td>0, 5 -&gt; false</td>
+</tr>
+<tr>
+<td>NumberLess</td>
+<td>number comparison</td>
+<td>int (number)</td>
+<td>0, 5 -&gt; true</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>NumberAbs</th>
+<th>absolute value of the</th>
+<th></th>
+<th>-10 -&gt; 10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>number</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NumberAdd</td>
+<td>add parameter to value</td>
+<td>int (number)</td>
+<td>5, 2 -&gt; 7</td>
+</tr>
+<tr>
+<td>NumberSubtract</td>
+<td>subtract parameter from</td>
+<td>int (number)</td>
+<td>5, 2 -&gt; 3</td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NumberMultiply</td>
+<td>value and parameter</td>
+<td>int (number)</td>
+<td>5, 2 -&gt; 10</td>
+</tr>
+<tr>
+<td></td>
+<td>multiplication</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NumberDivide</td>
+<td>dividing a value by a</td>
+<td>int (number)</td>
+<td>5, 2 -&gt; 3</td>
+</tr>
+<tr>
+<td></td>
+<td>parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DateToDayOfMonth</td>
+<td>day number of the date</td>
+<td>string</td>
+<td>date(01.12.2022) -&gt; 1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>(locale*),</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>DateToMonth</td>
+<td>month number of the</td>
+<td>string</td>
+<td>date (01.12.2022) -&gt; 12</td>
+</tr>
+<tr>
+<td></td>
+<td>date</td>
+<td>(locale*),</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>DateToMonthInWords</td>
+<td>month of the date</td>
+<td>string</td>
+<td>date (01.12.2022) -&gt;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>(locale*),</td>
+<td>"december"</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>date(01.12.2022), "es_ES" -</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>&gt; "diciembre"</td>
+</tr>
+<tr>
+<td>DateToYear</td>
+<td>year of the date</td>
+<td>string</td>
+<td>date(01.12.2022) -&gt; 2022</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>(locale*),</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>DateToTime</td>
+<td>time of the date</td>
+<td>string</td>
+<td>date (01.12.2022 0:00:00) -</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>(locale*),</td>
+<td>&gt; "0:00"</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>optional</td>
+<td></td>
+</tr>
+<tr>
+<td>TemperatureCelciusTo</td>
+<td>convert temperature</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Fahrenheit</td>
+<td>from Celcius to</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Fahrenheit value</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NumberGroupWithSep</td>
+<td>separates groups of</td>
+<td>string</td>
+<td>5500 -&gt; 5.500</td>
+</tr>
+<tr>
+<td>arator</td>
+<td>digits with a custom</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>character</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>EnumEquals</td>
+<td>compares the</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>enumeration value with</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>a string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StringAdd</td>
+<td>adds another string to</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>the string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StringFormat</td>
+<td>substitutes the</td>
+<td>string</td>
+<td>'202SUB', '2' -&gt; '2022'</td>
+</tr>
+<tr>
+<td></td>
+<td>parameter- string in a</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>special place of the</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>original string (instead</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>"SUB")</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>StringFormatReverse</td>
+<td>substitutes the original</td>
+<td>string</td>
+<td>'2', '202SUB' -&gt; '2022'</td>
+</tr>
+<tr>
+<td></td>
+<td>string in a special place</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>of the parameter-string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>(instead "SUB")</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>PercentOf</th>
+<th>calculates the</th>
+<th>int</th>
+<th>10, 100 -&gt; 10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>percentage. The initial</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>value from which the</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>percentage is calculated</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>serves as the parameter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PercentTo</td>
+<td>calculates the</td>
+<td>int</td>
+<td>100, 10 -&gt; 10</td>
+</tr>
+<tr>
+<td></td>
+<td>percentage. The initial</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>value from which the</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>percentage is calculated</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>serves as the original</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NumberIsEven</td>
+<td></td>
+<td></td>
+<td>1 -&gt; false</td>
+</tr>
+<tr>
+<td>NumberIsOdd</td>
+<td></td>
+<td></td>
+<td>1 -&gt; true</td>
+</tr>
+<tr>
+<td>TruncateString</td>
+<td>Truncate string to a</td>
+<td>int</td>
+<td>"Long string", 5 -&gt;</td>
+</tr>
+<tr>
+<td></td>
+<td>certain length, adding</td>
+<td></td>
+<td>"Long…"</td>
+</tr>
+<tr>
+<td></td>
+<td>"..." to the end if</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>necessary.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="onverters-with-multiple-parameters"><em>С</em><strong>onverters (with multiple parameters)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Converter name</th>
+<th>Desciprtion</th>
+<th>Parameters</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DateCustomFormat</td>
+<td>Custom</td>
+<td>"format" (string):</td>
+<td>date (01.12.2022),</td>
+</tr>
+<tr>
+<td></td>
+<td>format of date</td>
+<td>https://learn.microsoft.com/en</td>
+<td>"format:yyyy;</td>
+</tr>
+<tr>
+<td></td>
+<td>and/or time.</td>
+<td>us/dotnet/standard/base</td>
+<td>locale:en-US" -&gt;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>types/custom-date-and-time</td>
+<td>"2022"</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>format-strings</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>"locale"* (string, optional) :</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>culture info, see appendix</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>*Numeric formatting: uses a string to format numbers. For example, a number "1" with a string format "00" returns "01". More info: https://learn.microsoft.com/en-us/dotnet/standard/basetypes/standard-numeric-format-strings</p>
+<p>*Culture info (locale): uses to represent data using a specific culture info (locale), defined by culture code. Examples: "en-US", "fr-FR". The value "current" means to use current culture (depends on end user's machine settings). The value "invariant" means to use invariant culture (uses by default, if culture has not been specified). More info about culture codes: https://gist.github.com/hikalkan/afe23b47c30fea418f607561d277c510</p>
+<h1 id="localization-support"><strong>Localization support</strong></h1>
+<p>To include specific localizations, it is necessary to create json files in %theme_folder% / localizations /folder (filename is custom):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="json"><strong><localization>.json</strong></h3>
+<ul>
+<li>Id : string locale identifier, it is recommended to use generally recognized codes such as "en-US", "fr-FR", etc.</li>
+<li>Name : string localization name displayed in the UI.</li>
+<li>Strings : Dictionary<string, string></li>
+<li>Vars : Dictionary<string, object></li>
+</ul>
+<p>Strings key-value pair should be of the following types string : string, Vars – string : object, where object can be string or number or bool or colortype.</p>
+<p>Example:</p>
+<p><img alt="" src="../_page_51_Picture_10.jpeg" /></p>
+<p>Localization <strong>strings</strong> are used to automatically substitute text in the markup. Any block of text enclosed in square brackets ( "[", "]" ) will be marked as being localized. The renderer will look for matching text as a key in the Strings pair in the current localization file (which is userselectable).</p>
+<p>Example:</p>
+<p><img alt="" src="../_page_51_Picture_13.jpeg" /></p>
+<p>if german.json is (and user choosed germanlocalization):</p>
+<p><img alt="" src="../_page_51_Picture_15.jpeg" /></p>
+<p>"Source" will be converted to (the app will automatically substitute the necessary text):</p>
+<p>If the required string is not found in the localization file, the square brackets will be cleared:</p>
+<p>Localization <strong>vars</strong> fall into the common list of variables using the override mechanism (see Variables and Expressions).</p>
+<p>theme_description.jsoncan optionally define the following properties:</p>
+<ul>
+<li>DefaultLocalizationId : string specifies the default localization.</li>
+<li>DisableUnspecifiedLocalization : bool value true disables the possibility to select "default, not specified" option in the list of theme localizations. Usually, the renderer provides for the use of some kind of localization as an additional functionality, an add-on on top of the normal behavior of the theme. In this case, it is possible to use the theme without selecting any localization. However, you can define this property with the value true if you need to be sure to use some localization.</li>
+</ul>
+<h1 id="appendix"><strong>Appendix</strong></h1>
+<p>You can find a description of the data objects, render types, etc. on the GitHub page: https://github.com/vlad-men/RacingLeagueTools_RendererAPI</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../first-steps/" class="md-footer__link md-footer__link--prev" aria-label="Previous: First steps">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                First steps
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/W2bQb44xGa" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>
